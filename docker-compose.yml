@@ -4,9 +4,9 @@ services:
     image: mongo:latest
     command: mongod --auth
     environment:
-      MONGO_INITDB_ROOT_USERNAME: ufood
-      MONGO_INITDB_ROOT_PASSWORD: ufood@QWERTY
-      MONGO_INITDB_DATABASE: ufood
+      MONGO_INITDB_ROOT_USERNAME: test
+      MONGO_INITDB_ROOT_PASSWORD: test
+      MONGO_INITDB_DATABASE: test
     volumes:
               - ./mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
     ports:
